@@ -362,12 +362,12 @@ $ns run]
 
 ### **Síntese do Aprendizado**
 
-*   [Através desse laboratório cujos principais aprendizados se baseavam na relação entre os parâmetros de QoS (latência, jitter, throughput, perda) e o desempenho de diferentes aplicações, cujos resultados dos expeimentos foram de tamanha para compreensão e aprendizado daqueles que o fizeram.
+*   Através desse laboratório cujos principais aprendizados se baseavam na relação entre os parâmetros de QoS (latência, jitter, throughput, perda) e o desempenho de diferentes aplicações, cujos resultados dos expeimentos foram de tamanha para compreensão e aprendizado daqueles que o fizeram.
     No primeiro experimento temos o arquivo `qos_base.tcl` que criou um script capaz de reproduzir  e avaliar parâmetros, delay, largura de banda, limites da fila, modelo de erro, trazendo uma compreensão inicial do problema.
     Em seguida foi tratado sobre o link delay, com o script `lab_latencia.tcl`, substituindo as variáveis de delay em 10, 100 e 500 milisegundos, enviando tráfego CBR, cujos arquivos de trace registram os envios e recebimentos. Observou-se que a latência medida tende a refletir o delay configurado no link mais overhead de processamento e enfileiramento: quando o link é configurado com valores maiores, a latência medida sobe de forma consistente
     Já quanto ao Jitter e a perda de pacotes, foi utilizada a ferramenta do Wireshark, a qual permite a análise de pacotes RTCP (principalmente Receiver Reports), cujos continham Fraction Lost, Cumulative Number of Packets Lost e Interarrival Jitter.
     Quanto ao throughput e responsividade
-    Escreva uma síntese dos principais aprendizados sobre a relação entre os parâmetros de QoS (latência, jitter, throughput, perda) e o desempenho de diferentes aplicações, utilizando os resultados dos experimentos. Faça um link com a **narrativa da telecirurgia** e proponha uma **solução baseada em QoS** para otimizar o desempenho das aplicações críticas nesse cenário desafiador (vídeo HD, comandos táteis, voz, dados do paciente).]
+    Escreva uma síntese dos principais aprendizados sobre a relação entre os parâmetros de QoS (latência, jitter, throughput, perda) e o desempenho de diferentes aplicações, utilizando os resultados dos experimentos. Faça um link com a **narrativa da telecirurgia** e proponha uma **solução baseada em QoS** para otimizar o desempenho das aplicações críticas nesse cenário desafiador (vídeo HD, comandos táteis, voz, dados do paciente).
 
 ---
 
