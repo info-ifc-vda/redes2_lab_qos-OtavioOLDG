@@ -90,7 +90,7 @@ set default_queue "DropTail" ;# Tipo de fila padrão]
 
 **Entrega:** Captura de tela do Wireshark com a interface de captura selecionada.
 ```
-# [INSERIR CAPTURA DE TELA DO WIRESHARK COM INTERFACE SELECIONADA AQUI]
+![Wireshark](image-4.png)
 ```
 
 ---
@@ -186,15 +186,15 @@ r 0.608 0 1 cbr 1000 ------- 0 0.0 1.0 0 0]
 
 1.  Captura de tela do Wireshark mostrando a captura inicial de pacotes.
     ```
-    # ![Wireshark](image-4.png)
+    ![Wireshark](image-4.png)
     ```
 2.  Captura de tela do Wireshark mostrando o filtro `rtcp` aplicado.
     ```
-    # ![Captura dos pacotes rtcp](image-3.png)
+    ![Captura dos pacotes rtcp](image-3.png)
     ```
 3.  Captura de tela dos detalhes de um pacote **Receiver Report (RR)**, com os campos `Fraction Lost`, `Cumulative Number of Packets Lost` e `Interarrival Jitter` claramente visíveis.
     ```
-    # [![Captura](image-8.png)]
+    ![Captura](image-8.png)
     ```
 
 **Valores Observados:**
@@ -336,7 +336,7 @@ $ns run]
 
 **Entrega:** O código `lab_perda.tcl` utilizado.
 ```tcl
-# ![perda](image-7.png)
+![perda](image-7.png)
 ```
 
 ### **8.2. Análise da Perda de Pacotes no Arquivo de Trace (.tr)**
