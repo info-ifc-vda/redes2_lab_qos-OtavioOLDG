@@ -201,11 +201,11 @@ r 0.608 0 1 cbr 1000 ------- 0 0.0 1.0 0 0]
 ### **6.2. Perguntas para Refletir e Discutir**
 
 1.  **Como esses valores de Jitter e Fraction Lost se comparam aos limites aceitáveis para uma boa qualidade de voz/vídeo (ex: jitter idealmente abaixo de 30ms, perda abaixo de 1%)?**
-    *   [Sua Resposta Aqui]
+    *   O jitter eu não entendi como esse valor é gerado, porque se esse valor for em ms, tem algo de errado pois converitdo chega próximo à 9 dias, e quanto ao fraction lost, houve uma perda bem superior à 1%, o que poderia comprometer em outras atividades que necessitassem de pricisão e não pudessem haver falhas na rede, como é o caso de uma cirurgia, porém os dados de streaming possuem uma tolerância maior, tanto que caso houvesse alguém a mais na chamada, não creio que as oscilações e perdas seriam tão parentes quanto os dados mostram.
 2.  **Por que o RTCP é essencial para aplicações em tempo real, mesmo que o RTP (dados de mídia) esteja criptografado?**
-    *   [Sua Resposta Aqui]
+    *   Mesmo com RTP criptografado, só o receptor sabe como a sessão está chegando (perdas, variação de atraso, atraso). O RTCP envia esse feedback de volta ao transmissor de forma leve e segura, permitindo que a aplicação saiba se a qualidade está ruim e tome decisões, sem precisar inspecionar o conteúdo criptografado.
 3.  **Como as informações de jitter e perda de pacotes reportadas pelo RTCP podem ser usadas pela aplicação (Google Meet) para ajustar a qualidade da transmissão?**
-    *   [Sua Resposta Aqui]
+    *   Quando o RTCP mostra perda ou jitter alto, o Meet diminui o bitrate/resolução ou reduz o frame-rate, ativa correções (FEC/RTX) ou aumenta o jitter buffer no receptor. Se a situação piora persistente, troca codec, pede um keyframe ou alerta o usuário; tudo isso para manter a chamada utilizável mesmo com a rede ruim
 
 ---
 
