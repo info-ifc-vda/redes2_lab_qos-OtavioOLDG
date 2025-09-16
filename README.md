@@ -330,9 +330,8 @@ $ns run]
 *   Criei e executei o script `lab_perda.tcl`, ajustando a taxa de erro de bit (`rate_`) para diferentes valores (ex: 1e-2, 1e-5) no `ErrorModel`.
 
 **Entrega:** O código `lab_perda.tcl` utilizado.
-```tcl
 ![perda](image-7.png)
-```
+
 
 ### **8.2. Análise da Perda de Pacotes no Arquivo de Trace (.tr)**
 
