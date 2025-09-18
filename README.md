@@ -341,11 +341,11 @@ $ns run]
 
 | `rate_` Configurado (ErrorModel) | Pacotes UDP Enviados | Pacotes UDP Recebidos | Pacotes Perdidos | Taxa de Perda (%) |
 | :------------------------------- | :------------------- | :-------------------- | :--------------- | :---------------- |
-| [Valor 1 (e.g., 1e-2)]           | [Valor]              | [Valor]               | [Valor]          | [Resultado]       |
-| [Valor 2 (e.g., 1e-5)]           | [Valor]              | [Valor]               | [Valor]          | [Resultado]       |
+| [1 (e.g., 1e-2)]           | [1504]              | [1120]               | [384]          | [25%]       |
+| [2 (e.g., 1e-5)]           | [1520]              | [1120]               | [401]          | [26%]       |
 
 **Descrição do Comportamento do TCP:**
-*   [Descreva o que você observou no trace file para o TCP, mencionando eventos de retransmissão (R) e ACKs, e como ele se diferencia do UDP em termos de entrega final]
+*   Vi que os pacotes TCP aparecem em pequenos grupos e, quando um é perdido, o mesmo pacote volta a ser enviado logo em seguida, sinal claro de retransmissão e aparecem ACKs confirmando a recepção dos blocos entregues. Depois dessas perdas o envio TCP fica mais espaçado, como se estivesse “pisando no freio” (comportamento de controle de congestionamento) antes de retomar. Em contraste, o tráfego UDP/CBR continua na mesma taxa e alguns pacotes são simplesmente descartados sem tentativa de reenvio, ou seja, UDP prioriza latência enquanto TCP prioriza entrega.
 
 ### **8.3. Perguntas para Refletir e Discutir**
 
